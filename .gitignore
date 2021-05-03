@@ -1,0 +1,6 @@
+# C-Sharp Build directories
+bin/
+obj/
+
+# VSCode directives
+.vscode/
