@@ -9,17 +9,15 @@ if [[ -n $PNAME ]]
 then
   echo "Setting Up Up Project Named: $PNAME"
   # Make directories
-  sol="${PNAME}.Solution"
-  mkdir $sol
-  mkdir $sol/$PNAME
-  mkdir $sol/$PNAME/Models
+  mkdir $PNAME
+  mkdir $PNAME/Models
   tes="${PNAME}.Tests"
-  mkdir $sol/$tes
-  mkdir $sol/$tes/ModelTests
+  mkdir $tes
+  mkdir $tes/ModelTests
 
   # Make empty cs class file
   main="${PNAME}.cs"
-  touch $sol/$PNAME/Models/$main
+  touch $PNAME/Models/$main
 
   # Make csproj files for main and test dirs
   mainproj="${PNAME}.csproj"
@@ -27,7 +25,7 @@ then
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
-</Project>" >> $sol/$PNAME/$mainproj
+</Project>" >> $PNAME/$mainproj
   testproj="${PNAME}.Tests.csproj"
   echo "<Project Sdk="Microsoft.NET.Sdk">
 
@@ -44,11 +42,11 @@ then
     <ProjectReference Include=\"..\\${PNAME}\\${mainproj}\" />
   </ItemGroup>
 
-</Project>" >> $sol/$tes/$testproj
+</Project>" >> $tes/$testproj
 
   # make cs test file
   modtes="${PNAME}Test.cs"
-  echo "using Microsoft.VisualStudio.TestTools.UnitTesting;" >> $sol/$tes/ModelTests/$modtes
+  echo "using Microsoft.VisualStudio.TestTools.UnitTesting;" >> $tes/ModelTests/$modtes
 
   # print success and escape
   echo "${PNAME} Project Directories and Files Set Up Successfully!"
