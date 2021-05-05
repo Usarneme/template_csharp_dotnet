@@ -1,28 +1,18 @@
-# PROJECT NAME
+# Create C# Project Structure Via Bash
 ## By Usarneme/Tom
 
 ---
 
 ### Project Description
 
-This project is a web application that DESCRIPTION
+This repo holds a bash script for creating the directory structure and boilerplate code files for a TDD-ready C#/.NET project.
 ---
 ### Tech Stack
-1. C#/.NET5
-2.
+1. Bash
 ---
-
-### Project Build Available At:
-
-[BUILD URL](BUILD URL)
-
----
-### Installation Instructions
-1. Clone this repo: `git clone https://github.com/Usarneme/REPO URL`
-2. Enter new directory `cd REPO DIR`
-3. Install application with `dotnet build`
-4. Start application with `dotnet run`
-5.
+### Run Instructions
+1. Ensure script is executable using `chmod u+x setup.sh` NOTE: You may have to use sudo
+2. Run the script. Mac: `sh setup.sh ProjectName`. Linux: `./setup.sh ProjectName`. NOTE: The project name should be passed as an argument to the setup script. For example if you are creating a Todo project, run the script with `sh setup.sh Todo`
 ---
 ### Known Issues:
 1. NO KNOWN ISSUES
@@ -31,9 +21,6 @@ This project is a web application that DESCRIPTION
 
 ### License is GPLv3 and I make no claim to copyright.
 <br />
-
-> You can't steal what is freely given. Enjoy!
-
 <br />
 <br />
 <br />

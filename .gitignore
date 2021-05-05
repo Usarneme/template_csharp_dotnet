@@ -1,6 +1,9 @@
 # C-Sharp Build directories
-bin/
-obj/
+*/bin/
+*/obj/
 
 # VSCode directives
 .vscode/
+
+# environmental variables
+*.env
