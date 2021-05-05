@@ -21,21 +21,21 @@ then
 
   # Make csproj files for main and test dirs
   mainproj="${PNAME}.csproj"
-  echo "<Project Sdk="Microsoft.NET.Sdk">
+  echo "<Project Sdk=\"Microsoft.NET.Sdk\">
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 </Project>" >> $PNAME/$mainproj
   testproj="${PNAME}.Tests.csproj"
-  echo "<Project Sdk="Microsoft.NET.Sdk">
+  echo "<Project Sdk=\"Microsoft.NET.Sdk\">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="PNAME5.0.0" />
-    <PackageReference Include="MSTest.TestAdapter" Version="PNAME.3.2" />
-    <PackageReference Include="MSTest.TestFramework" Version="PNAME.3.2" />
+    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"15.0.0\" />
+    <PackageReference Include=\"MSTest.TestAdapter\" Version=\"1.3.2\" />
+    <PackageReference Include=\"MSTest.TestFramework\" Version=\"1.3.2\" />
   </ItemGroup>
 
   <ItemGroup>
